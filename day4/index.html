@@ -1,0 +1,74 @@
+<!-- <Table> <Tr> <Th> <Td> <Caption><Thead><Tbody><Tfoot>
+  Table Tag Attribute : Cellspacing=”...” Cellpadding=”...” Border=”...” Width=”...” Height=”...” Bgcolor=”...
+  ”Td, Th Tag Attribute : Colspan, Rowspan, Bgcolor -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table
+      bgcolor="yellow"
+      cellspacing="0"
+      cellpadding="0"
+      border="1"
+      width="400px"
+      height="200px"
+    >
+      <!-- table heading -->
+      <thead>
+        <!-- table row -->
+        <tr bgcolor="green">
+          <!-- table head -->
+          <th>Name</th>
+          <th>subject</th>
+          <th>marks</th>
+          <th>Semester</th>
+        </tr>
+      </thead>
+      <!-- table body -->
+      <tbody>
+        <tr>
+          <!-- table Data -->
+          <td>Superman</td>
+          <td bgcolor="blue" rowspan="2">english</td>
+          <td colspan="2">55</td>
+        </tr>
+        <tr>
+          <td>Superman</td>
+          <td>hindi</td>
+          <td rowspan="2">56</td>
+        </tr>
+      </tbody>
+      <!-- table footer -->
+      <tfoot>
+        <tr>
+          <td colspan="2">marks</td>
+          <td>110</td>
+        </tr>
+        <tr>
+          <td colspan="2">marks</td>
+          <td>110</td>
+          <td>
+            <table border="">
+              <tr>
+                <td>hello</td>
+                <td>world</td>
+              </tr>
+              <tr>
+                <td>hello</td>
+                <td>world</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tfoot>
+      <caption>
+        Mark sheet
+      </caption>
+    </table>
+  </body>
+</html>
