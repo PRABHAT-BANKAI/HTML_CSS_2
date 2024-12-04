@@ -1,0 +1,54 @@
+<!-- Inline Css, Internal Css, External Css @Media, @Key
+Frames Details: <Tag>, .Class, #IdUse Of Inline Css -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- //internal css -->
+    <!-- /* priority
+    id
+    class
+    tagname */ -->
+    <style>
+*{
+  border: 1px solid black;
+  color :yellow 
+}
+
+      #internal-css {
+        color: rgb(43, 31, 173)!important;
+        /* color : red */
+      }
+      .text {
+        font-size: 45px;
+        color: aqua;
+      }
+      .color {
+        color: red;
+      }
+
+      #head {
+        color: darkgrey;
+      }
+      h1 {
+        color: blue;
+      }
+      .heading {
+        color: rgb(20, 190, 220);
+      }
+    </style>
+  </head>
+  <body>
+    <p style="color: rgb(31, 173, 102)">Hello world (Inline CSS)</p>
+    <p style="color: rgb(31, 173, 102); font-size: 45px">
+      Hello world (Inline CSS)
+    </p>
+    <p id="internal-css">Internal CSS with ID</p>
+    <p class="text color">Internal CSS with class</p>
+    <h1 class="heading" id="head" style="color: blueviolet;">internal css By tag name css</h1>
+  </body>
+</html>
