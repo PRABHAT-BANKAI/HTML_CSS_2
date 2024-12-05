@@ -1,0 +1,92 @@
+<!-- Use Of Internal Cssfont
+Family-Font,
+ Font-Size, Color, Font-Weight, Text-Align, 
+ Line-Height, Letter-Spacing, Word-Spacing, Text-Decoration,
+  Font-Style, Text- Transform, Text-Indent
+Online Font Attachment -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sixtyfour+Convergence&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #family {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .font-size {
+        font-size: 36px;
+        text-decoration: underline;
+      }
+      b {
+        color: red;
+        font-style: italic;
+      }
+      .weight {
+        font-weight: 200;
+      }
+      .align {
+        /* text-align: right; */
+        text-align: center;
+      }
+      .height {
+        line-height: 55px;
+        background-color: yellow;
+        word-spacing: 55px;
+      }
+      .height2 {
+        line-height: 25px;
+        background-color: rgb(255, 0, 0);
+        letter-spacing: 55px;
+      }
+      .text-transform {
+        text-transform: lowercase;
+        /* text-transform: uppercase;
+        text-transform: capitalize; */
+      }
+      .indent {
+        text-indent: 100px;
+      }
+      .dancing-script-online {
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .sixtyfour-convergence-online {
+        font-family: "Sixtyfour Convergence", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "BLED" 0, "SCAN" 0, "XELA" 0, "YELA" 0;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="family">hello from font family</p>
+    <p class="font-size">hello from font size</p>
+    <b>Color</b>
+    <p class="weight">hello from font weight</p>
+    <p class="align">hello from text align</p>
+    <p class="height">hello from line height</p>
+    <p class="height2">hello from line height</p>
+    <p class="text-transform">helLo From Text transform</p>
+    <p class="indent dancing-script-online sixtyfour-convergence-online">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+      possimus vel hic sit, at quasi, ab doloribus commodi iusto veniam facere.
+      Quaerat incidunt delectus ut praesentium, odio et minus unde.
+    </p>
+  </body>
+</html>
