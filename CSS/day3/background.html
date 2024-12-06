@@ -1,0 +1,61 @@
+<!-- Background
+Color, Gradirents, Position, Size,
+ Attachment, Repeat, Image, Background-Blend- Mode -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main-container {
+        background-color: green;
+        color: blue;
+      }
+      .gradient {
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+        /* background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(151, 175, 163, 1) 59%,
+          rgba(0, 212, 255, 1) 100%
+        ); */
+        /* background: radial-gradient(
+          circle,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(159, 175, 151, 1) 60%,
+          rgba(0, 212, 255, 1) 100%
+        ); */
+        background-image: conic-gradient(rgb(0, 255, 13), yellow, green,blue,crimson);
+     
+      }
+
+
+      .position{
+        background-image: url("./image.jpeg");
+        height: 700px;
+        width: 700px;
+        /* background-repeat: repeat-y; */
+        /* background-repeat: repeat-x; */
+        background-repeat: no-repeat;
+        /* background-position: top; */
+        background-size: cover;
+        background-size: contain;
+        /* background-attachment: scroll; by default always srcoll */
+        background-attachment: fixed;
+        background-color: yellow;
+        background-blend-mode: darken;
+        background-blend-mode: luminosity;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">hello from main container</div>
+    <div class="gradient"></div>
+    <div class="position">
+      hello image from background image
+    </div>
+  </body>
+</html>
