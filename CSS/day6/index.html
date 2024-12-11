@@ -1,0 +1,151 @@
+<!-- Selector div,P, Div P, Div > P:
+
+First Letter, :First Line, :First Child, :LastChild, :Nth Child(), :Nth Last Child(), ::Selection -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* group Selector */
+      /* h1,
+      h2,
+      p,
+      h3 {
+        color: blue;
+      } */
+
+      /* .container h3 {
+        color: green;
+      } */
+
+      .container > h3 {
+        color: red;
+      }
+
+      p::first-letter {
+        color: red;
+        font-size: 25px;
+      }
+      p::first-line {
+        background-color: yellow;
+      }
+      .card :first-child {
+        background-color: purple;
+      }
+      .card2 :last-child {
+        background-color: chartreuse;
+      }
+
+      .card3 :nth-child(2) {
+        color: blue;
+      }
+
+      .last-container :nth-last-child(3) {
+        color: red;
+      }
+      p::selection {
+background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>hello from Selectors</h1>
+      <h2>hello from h2 tag</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate,
+        voluptatem provident. Voluptatibus commodi aperiam non est, error ea
+        quidem explicabo sit harum porro perferendis quam qui maxime! Explicabo,
+        in suscipit.
+      </p>
+    </div>
+    <div>
+      <h1>hello from Selectors</h1>
+      <h2>hello from h2 tag</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate,
+        voluptatem provident. Voluptatibus commodi aperiam non est, error ea
+        quidem explicabo sit harum porro perferendis quam qui maxime! Explicabo,
+        in suscipit.
+      </p>
+    </div>
+    <div class="container">
+      <h3>hello from h3 tag</h3>
+      <h3>hello from h3 tag</h3>
+      <h3>hello from h3 tag</h3>
+      <h3>hello from h3 tag</h3>
+      <h3>hello from h3 tag</h3>
+      <div>
+        <h3>hello from h3 tag</h3>
+        <h3>hello from h3 tag</h3>
+        <h3>hello from h3 tag</h3>
+        <div>
+          <h3>hello from h3 tag</h3>
+          <h3>hello from h3 tag</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>heading 1</h2>
+      <h2>heading 2</h2>
+      <h2>heading 3</h2>
+      <div>
+        <h2>heading 1</h2>
+        <h2>heading 2</h2>
+        <h2>heading 3</h2>
+        <div>
+          <h2>heading 2</h2>
+          <h2>heading 3</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="card2">
+      <h2>heading 1</h2>
+      <h2>heading 2</h2>
+      <h2>heading 3</h2>
+      <div>
+        <h3>hello</h3>
+        <h3>hello</h3>
+        <h3>hello</h3>
+        <h3>hello</h3>
+      </div>
+      <h4>hello</h4>
+    </div>
+    <div class="card3">
+      <h2>heading 1</h2>
+      <h2>heading 2</h2>
+      <h2>heading 3</h2>
+      <div>
+        <h3>hello</h3>
+        <h3>hello 2</h3>
+        <h3>hello</h3>
+        <h3>hello</h3>
+      </div>
+      <h4>hello</h4>
+    </div>
+
+    <div class="last-container">
+      <h3>heading1</h3>
+
+      <h2>hello1</h2>
+      <h2>hello 2</h2>
+      <h2>hello 3</h2>
+
+      <h2>hello1</h2>
+      <h2>hello 2</h2>
+      <h2>hello 3</h2>
+
+      <div>
+        <h2>hello1</h2>
+        <h2>hello 2</h2>
+        <h2>hello 3</h2>
+      </div>
+    </div>
+  </body>
+</html>
