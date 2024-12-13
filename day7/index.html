@@ -1,0 +1,93 @@
+<!-- Positionstatic, Absolute,
+  Relative, Fixed, Sticky,
+   Z Index, Overflow -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 600px;
+        height: 600px;
+        background-color: blue;
+        border: 1px solid black;
+        position: relative;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        position: absolute;
+        /* right: 50%;
+        bottom: 50%;
+        top: 0;
+        left: 0; */
+        right: -25px;
+        /* bydefault position static  */
+      }
+
+      .outer {
+        width: 1000px;
+        height: 1800px;
+        background-color: rgb(229, 255, 0);
+        border: 1px solid black;
+        position: relative;
+      }
+
+      .fixed {
+        height: 200px;
+        width: 200px;
+        background-color: rgb(0, 208, 255);
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+      }
+
+      .sticky {
+        height: 200px;
+        width: 400px;
+        background-color: rgb(17, 255, 0);
+        bottom: 50px;
+        right: 50px;
+        position: sticky;
+        top: 25px;
+      }
+      .extra {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(204, 0, 255);
+        border: 1px solid black;
+        /* overflow: scroll; */
+        /* overflow: hidden; */
+        /* overflow: auto; */
+     
+       
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="container">
+        relative
+        <div class="box">absolute</div>
+      </div>
+      <div class="fixed">position fixed</div>
+
+      <div class="sticky">position sticky</div>
+    </div>
+    <div class="extra">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat id odio,
+      aperiam dolorum dignissimos placeat rerum obcaecati dolore ipsa facere
+      perferendis doloribus nam debitis voluptas at corrupti itaque nesciunt
+      mollitia.
+    </div>
+  </body>
+</html>
