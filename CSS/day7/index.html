@@ -1,0 +1,73 @@
+<!-- Before, After, Transition & Hover::Before,
+ ::Aftertransition Duration, Timing Function, Delay, Property:Hover, :Focus 
+ transform-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+        transform: rotate(180deg);
+        color: yellow;
+        font-size: 44px;
+        margin-bottom: 25px;
+      }
+      .box2 {
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+        transform:scale(0.1);
+        color: yellow;
+        font-size: 44px;
+      }
+      .box3 {
+        height: 200px;
+        width: 200px;
+        background-color: rgb(0, 255, 55);
+       /* transition-duration: 2s;
+       transition-delay: 2s;
+       transition-property:width ;
+      */
+        color: yellow;
+        font-size: 44px;
+      }
+      .box3:hover{
+        transform: skew(90deg);
+        transition: 3s;
+      }
+      #text::before{
+        content: "hello ";
+      }
+      #text:hover::after{
+        content: "😀";
+       
+      }
+
+
+  
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      hello   sir
+    </div>
+    <div class="box2">
+      hello   sir
+    </div>
+    <div class="box3">
+      hello   sir
+    </div>
+
+    <p id="text">world</p>
+
+
+
+    
+  </body>
+</html>
